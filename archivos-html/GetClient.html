@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>clientes</title>
+    <link rel="stylesheet" href="/archivos-css/style.css">
+
+</head>
+<body>
+    <header>
+        <h1>List of Clients</h1>
+    </header>
+
+    <main>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Age</th>
+                    <th>Birthdate</th>
+                    <th>Gender</th>
+                    <th>Phone Number</th>
+                    <th>Email</th>
+                    <th>Address</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <!--Aqui se regenera los clientes de la API-->
+            </tbody>
+        </table>
+        <br>
+        <div class="navigation">
+            <a href="/index.html" class="nav-button">Inicio</a>
+            <a href="PostClient.html" class="nav-button">Agregar Cliente</a>
+            <a href="DeleteClient.html" class="nav-button">Eliminar Cliente</a>
+        </div>
+    </main>
+
+    <script src="/archivos-js/GetDatos/getClient.js"></script>
+</body>
+</html>

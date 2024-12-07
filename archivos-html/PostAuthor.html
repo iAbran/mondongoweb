@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adding Author</title>
+    <link rel="stylesheet" href="/archivos-css/postStyle.css">
+</head>
+<body>
+    <div class="container">
+        <h1> Add New Author</h1>
+        <form id="saveAuthor">
+            <div class="form-group">
+                <label for="name">First Name</label>
+                <input type="text" id="name" placeholder="First Name" required>
+            </div>
+            <div class="form-group">
+                <label for="lastName">Last Name</label>
+                <input type="text" id="lastName" placeholder="Last Name" required>
+            </div>
+            <div class="form-group">
+                <label for="birthdate">Birthdate</label>
+                <input type="date" id="birthdate" placeholder="Birthdate" required>
+            </div>
+            <div class="form-group">
+                <label for="gender">Gender</label>
+                <input type="text" id="gender" placeholder="Gender" required>
+            </div>
+            <div class="form-group">
+                <label for="uniqueCode">Unique Code</label>
+                <input 
+                    type="text" 
+                    id="uniqueCode" 
+                    placeholder="Unique Code" 
+                    maxlength="4" 
+                    minlength="4" 
+                    required
+                    pattern=".{4,4}"
+                    title="Unique Code most have 4 digits long"
+                >
+            </div>
+            <button type="submit">Guardar</button>
+        </form>
+        <div class="navigation">
+            <a href="/index.html" class="nav-button">Inicio</a>
+            <a href="GetAuthor.html" class="nav-button">Autores</a>
+            <a href="DeleteAuthor.html" class="nav-button">Eliminar autor</a>
+        </div>
+    </div>
+    <script src="/archivos-js/PostDatos/postAuthor.js"></script>
+</body>
+</html>

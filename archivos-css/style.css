@@ -1,0 +1,141 @@
+/* Reset básico de márgenes y padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos generales del cuerpo */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Estilos del encabezado */
+header {
+    background-color: #007bff;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.8em;
+}
+
+/* Estilos del contenido principal */
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Estilos de la tabla */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    caret-color: transparent;
+}
+
+table th,
+table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+table th {
+    background-color: #007bff;
+    color: #fff;
+}
+
+table tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Estilo de los botones de navegación */
+div {
+    text-align: center;
+}
+
+button {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin: 5px;
+}
+.navigation {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.nav-button {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #28a745;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 4px;
+    margin: 7px;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.nav-button:hover {
+    background-color: #218838;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+/* Estilo de los enlaces */
+a {
+    text-decoration: none;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    /* Reducir el tamaño de fuente del encabezado */
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    /* Ajustar padding del main */
+    main {
+        padding: 10px;
+    }
+
+    /* Hacer que la tabla sea scrollable en pantallas pequeñas */
+    table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    } 
+
+    /* Ajustar padding y font-size de los botones en pantallas más pequeñas */
+    button {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Ajustar el tamaño de los botones y fuentes en pantallas muy pequeñas */
+    header h1 {
+        font-size: 1.2em;
+    }
+
+    button {
+        padding: 6px 12px;
+        font-size: 12px;
+    }
+}
